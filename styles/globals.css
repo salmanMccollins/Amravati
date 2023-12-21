@@ -1,0 +1,298 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.3;
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none !important;
+    transition: 0.4s;
+}
+
+.container {
+    max-width: 1600px;
+}
+
+img {
+    background-color: #9F1917;
+}
+
+.HeaderFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 17px;
+}
+
+.HeaderItem a.link1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 125px;
+    height: 60px;
+    color: #000;
+    font-weight: 400;
+    position: relative;
+}
+
+.HeaderItem a.link1.active,
+.HeaderItem a.link1:hover {
+    color: #9F1917;
+}
+
+.HeaderItem a.link1.active::after,
+.HeaderItem a.link1:hover::after {
+    transition: 0.4s;
+}
+
+.HeaderItem a.link1.active::after,
+.HeaderItem a.link1:hover::after {
+    content: "";
+    width: 40%;
+    height: 3px;
+    background-color: #9F1917;
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+}
+
+.HeaderItem a img {
+    background-color: #fff;
+}
+
+.LogoImageBox {
+    margin: 10px 25px;
+}
+
+.SliderImage {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+.MenuIconsWrap {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.HMenuItems {
+    display: flex;
+
+}
+
+.HMenuItem {
+    margin-right: 25px;
+}
+
+.HMenuItems .HMenuItem:last-child {
+    margin-right: 0px;
+}
+
+.hederMenuIcon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.hederMenuIcon.MenuClickActivator {
+    background-image: url(../public/hamburger-black.png);
+}
+
+.hederMenuIcon.whatsapp {
+    background-image: url(../public/whatsapp-black.png);
+}
+
+.hederMenuIcon.location {
+    background-image: url(../public/location-black.png);
+}
+
+footer {
+    background-color: #9F1917;
+    color: #fff;
+    padding: 25px 0px;
+}
+
+.FooterLogoWrap {
+    max-width: 55%;
+    margin-bottom: 15px;
+
+}
+
+.FT2 {
+    margin-top: 15px;
+    display: block;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: underline !important;
+}
+
+.FT3 {
+    margin-bottom: 20px;
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+
+.FtrLinksWrap a {
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.FtLnk1 a {
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.FtrLinksWrap a:hover,
+.FtLnk1 a:hover {
+    color: #EA931A;
+}
+
+.FT4 {
+    margin-bottom: 10px;
+}
+
+.FtrSocialMediaFlex {
+    display: flex;
+}
+
+.FtrSocialIcon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-size: 100% 100%;
+}
+
+.FtrSocialIcon.instagram {
+    background-image: url(../public/instagram.png);
+}
+
+.FtrSocialIcon.facebook {
+    background-image: url(../public/facebook.png);
+    width: 12px;
+}
+
+.FtrSocialIcon.linkedin {
+    background-image: url(../public/linkedin.png);
+}
+
+.FtrSocialIcon.twitter {
+    background-image: url(../public/twitter.png);
+}
+
+.FtrSocialMediaFlex a {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.FtrSocialMediaFlex a:last-child {
+    margin-right: 0;
+}
+.FtrSocialMedia{
+    margin-top: 20px;
+}
+.FooterBottomWrap{
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0px;
+}
+.FooterBottom{
+    display: flex;
+    justify-content: space-between;
+}
+.FooterBottom a{
+    color: #fff !important;
+}
+.FooterBottom a:hover{
+    color: #EA931A;
+}
+
+.OverLay1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+    background: #0000004f;
+    z-index: 99;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.SideNav {
+    background-color: #EA931A;
+    z-index: 1000;
+    width: 500px;
+    padding: 25px;
+    height: 100vh;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    transition: 0.4s;
+}
+.PanelActivated .OverLay1{
+    display: block;
+}
+.PanelActivated .SideNav{
+    right: 0;
+}
+.PanelActivated{
+    overflow: hidden;
+}
+.NavLogo img{
+    background-color: #EA931A;
+}
+.NavLogo{
+    max-width: 140px;
+}
+.SideNavHeader{
+    position: relative;
+    margin-bottom: 25px;
+}
+.SideNavLinks{
+    margin-bottom: 20px;
+}
+.CloseBtn1{
+    display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-size: 100% 100%;
+  background-image: url(../public/close.png);
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  cursor: pointer;
+}
+.SideNavLinksRow a{
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+}
+.SideNavLinksRow a:hover{
+    color: #9F1917;
+}
+.SideNavFooter .row{
+    margin: 0 -5px;
+}
+.SideNavFooter .row .col-md-4{
+    padding: 0 5px;
+}
+.T4{
+    margin-top: 15px;
+}

@@ -1,10 +1,10 @@
 
-
+import HeroBanner from "@/components/common/HeroBanner";
 export default function Home() {
   return (
     <>
       
-      <div>hello salman</div>
+      <div><HeroBanner/></div>
     </>
   );
 }
