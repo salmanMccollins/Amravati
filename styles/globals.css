@@ -23,7 +23,7 @@ img {
     align-items: center;
     justify-content: center;
     position: relative;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .HeaderItem a.link1 {
@@ -64,12 +64,22 @@ img {
 
 .LogoImageBox {
     margin: 10px 25px;
+    max-width: 130px;
 }
 
 .SliderImage {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: calc(100vh - 70px);
+}
+.SliderImage::after{
+    content: "";
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .MenuIconsWrap {
@@ -93,8 +103,8 @@ img {
 }
 
 .hederMenuIcon {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     display: inline-block;
     background-size: 100% 100%;
     cursor: pointer;
@@ -296,3 +306,60 @@ footer {
 .T4{
     margin-top: 15px;
 }
+.SliderImageContent{
+    color: #fff;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 40px;
+}
+.HrT1{
+    font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.HrT2{
+font-size: 20px;
+margin-bottom: 20px;
+}
+.ContentBoxButtons a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: .4s;
+    border: 2px solid transparent;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #9F1917;
+    min-width: 195px;
+    font-weight: 400;
+    position: relative;
+    padding: 10px 35px 10px 15px;
+  }
+  .ContentBoxButtons a:first-child{
+    background-color: #EA931A;
+    margin-right: 20px;
+  }
+  .ContentBoxButtons a::after {
+    content: "";
+    height: 22px;
+    width: 22px;
+    background-size: 100% 100%;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background-image: url(../public/rightarrow.png);
+  }
+  .ContentBoxButtons a:hover{
+    border-color: #fff;
+  }
