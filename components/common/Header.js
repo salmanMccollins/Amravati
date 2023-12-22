@@ -90,14 +90,12 @@ export default function Header() {
                   </Link>
                 </div>
                 <div className="HeaderItem">
-                  <Link
-                    href={"/menu"}
-                    className={
-                      router.pathname == "/menu" ? "link1 active" : "link1"
-                    }
+                  <a
+                    href="javascript:void(0)"
+                    className="link1"
                   >
                     Order Now
-                  </Link>
+                  </a>
                 </div>
               </>
             )}

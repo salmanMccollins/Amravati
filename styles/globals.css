@@ -17,6 +17,18 @@ a {
 img {
     background-color: #9F1917;
 }
+header{
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.4s;
+}
+.StickyHeader header{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
 
 .HeaderFlex {
     display: flex;
@@ -329,6 +341,7 @@ footer {
 .HrT2{
 font-size: 20px;
 margin-bottom: 20px;
+text-transform: capitalize;
 }
 .ContentBoxButtons a {
     color: #fff;
@@ -362,4 +375,105 @@ margin-bottom: 20px;
   }
   .ContentBoxButtons a:hover{
     border-color: #fff;
+  }
+  .pd-common{
+    padding: 50px 0px;
+  }
+  .bg1{
+    background-color: #9F1917;
+  }
+  .PromotionalGrid{
+    position: relative;
+  }
+  .PromotionalGrid::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.2);
+  }
+  .promotionalBlock{
+    padding-top: 10px;
+  }
+  .PromotionalBlockContent{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    color: #fff;
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+  }
+  .PbT1{
+    font-size: 35px;
+    text-transform: capitalize;
+    max-width: 50%;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .PbT2{
+    margin-bottom: 30px;
+  }
+  .PromotionalBlockContent a{
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    transition: .4s;
+    border: 2px solid transparent;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #EA931A;
+    min-width: 170px;
+    font-weight: 400;
+    position: relative;
+    padding: 8px 35px 8px 8px;
+    text-align: center;
+  }
+  .PromotionalBlockContent a.color1{
+    background-color: #EA931A;
+  }
+  .PromotionalBlockContent a.color2{
+    background-color: #589507;
+  }
+  .PromotionalBlockContent a.color3{
+    background-color: #9F1917;
+  }
+  .PromotionalBlockContent a::after{
+    content: "";
+    height: 17px;
+    width: 17px;
+    background-size: 100% 100%;
+    display: inline-block;
+    position: absolute;
+    right: 16px;
+    top: 11px;
+    background-image: url(../public/rightarrow.png);
+  }
+  .PromotionalBlockContent a:hover{
+    border-color: #fff;
+  }
+  .promotionalBlock .row{
+    margin: 0 -10px;
+  }
+  .promotionalBlock .col-md-4{
+    padding: 0 5px;
+  }
+  .loadingMainDiv{
+    position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #EA931A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  text-align: center;
+  }
+  .loadingMainDiv img{
+    background: #EA931A;
   }

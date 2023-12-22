@@ -4,8 +4,67 @@ import "@/styles/globals.css";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import FooterBottom from "@/components/common/FooterBottom";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+
+function Loading() {
+  const router = useRouter();
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const handleStart = (url) =>
+      url !== router.asPath && setLoading(!url.includes("/ar"));
+    const handleComplete = (url) =>
+      url === router.asPath &&
+      setTimeout(() => {
+        setLoading(false);
+      }, 500);
+
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleComplete);
+    router.events.on("routeChangeError", handleComplete);
+
+    return () => {
+      router.events.off("routeChangeStart", handleStart);
+      router.events.off("routeChangeComplete", handleComplete);
+      router.events.off("routeChangeError", handleComplete);
+    };
+  });
+
+  return (
+    loading && (
+      <div className="loadingMainDiv ">
+        <div className="LoadingContent">
+        <Image
+                    src="/logo.png"
+                    layout="responsive"
+                    height={"180"}
+                    width={"92"}
+                    priority={true}
+                    className=""
+                  />
+          {/* <div className="LoadingT1">Loading</div> */}
+        </div>
+      </div>
+    )
+  );
+}
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const scrollCheck = window.scrollY > 100;
+      if (scrollCheck) {
+        document.getElementsByTagName("body")[0].classList.add("StickyHeader");
+      } else {
+        document
+          .getElementsByTagName("body")[0]
+          .classList.remove("StickyHeader");
+      }
+    });
+  });
   return (
     <>
       <Head>
@@ -18,6 +77,7 @@ export default function App({ Component, pageProps }) {
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"></link>
       </Head>
       <Header/>
+      <Loading />
       <Component {...pageProps} />
       <Footer/>
       <FooterBottom/>
