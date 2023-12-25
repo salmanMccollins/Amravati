@@ -1,6 +1,9 @@
 import Head from "next/head";
-import "@/styles/reboot.css"
+import "@/styles/reboot.css";
+import "@/styles/slick-slider/slick/slick.css";
+import "@/styles/slick-slider/slick/slick-theme.css";
 import "@/styles/globals.css";
+
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import FooterBottom from "@/components/common/FooterBottom";

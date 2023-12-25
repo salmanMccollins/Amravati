@@ -11,7 +11,7 @@ a {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1400px;
 }
 
 img {
@@ -384,6 +384,7 @@ text-transform: capitalize;
   }
   .PromotionalGrid{
     position: relative;
+   
   }
   .PromotionalGrid::after{
     content: "";
@@ -395,7 +396,7 @@ text-transform: capitalize;
     background-color: rgba(0,0,0,0.2);
   }
   .promotionalBlock{
-    padding-top: 10px;
+    padding-top: 30px;
   }
   .PromotionalBlockContent{
     position: absolute;
@@ -459,7 +460,7 @@ text-transform: capitalize;
     margin: 0 -10px;
   }
   .promotionalBlock .col-md-4{
-    padding: 0 5px;
+    padding: 0 10px;
   }
   .loadingMainDiv{
     position: fixed;
@@ -476,4 +477,115 @@ text-transform: capitalize;
   }
   .loadingMainDiv img{
     background: #EA931A;
+  }
+  .color-fff{
+    color: #fff;
+  }
+  .T1{
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .T2{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .ProductGrid {
+    position: relative;
+    overflow: hidden;
+    margin: 0 8px;
+  }
+  .ProductGrid::after {
+    content: "";
+    background-color: rgba(0,0,0,.1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .ProductGridBottom, .ProductGridTop {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    z-index: 2;
+  }
+  .ProductGridBottom {
+    bottom: 0;
+    text-transform: uppercase;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  .ProductGridTop {
+    top: 0;
+  }
+  .LikeBtn {
+    width: 30px;
+    height: 26px;
+    background-size: 100% 100%;
+    background-image: url(../public/like.png);
+    cursor: pointer;
+    margin-left: auto;
+  }
+  .ReviewRow {
+    display: flex;
+  }
+  .ReviewColumn {
+    width: 20px;
+    height: 21px;
+    background-size: 100% 100%;
+    background-image: url(../public/whitereview.png);
+    margin-right: 7px;
+  }
+  .ReviewColumn.gold{
+    background-image: url(../public/goldenreview.png);
+  }
+  .ProductGridLnk {
+    background-color: #EA931A;
+    color: #fff;
+    padding: 9px 5px;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid transparent;
+  }
+  .ProductGridLnk:hover{
+    background-color: #589507;
+    color: #fff !important;
+    border-color: #fff;
+  }
+  .GbT1{
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .GbT2{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .slider1{
+    margin-top: 50px;
+  }
+  .slider1 .slick-next::before, .slider1 .slick-prev::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-size: 100% 100%;
+    display: inline-block;
+    opacity: 1;
+  }
+  .slider1 .slick-next::before {
+    background-image: url(../public/btn-next.png);
+  }
+  .slider1 .slick-prev::before {
+    background-image: url(../public/btn-prev.png);
+  }
+  .slider1 .slick-next, .slider1 .slick-prev {
+    width: 50px;
+    height: 50px;
+    z-index: 5;
   }
