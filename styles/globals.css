@@ -3,6 +3,7 @@ body {
     line-height: 1.3;
     background-color: #fff;
     letter-spacing: 1px;
+    overflow-x: hidden;
 }
 
 a {
@@ -547,9 +548,9 @@ text-transform: capitalize;
   .ProductGridLnk {
     background-color: #EA931A;
     color: #fff;
-    padding: 9px 5px;
+    padding: 7px 5px;
     display: block;
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
     border-radius: 20px;
     border: 2px solid transparent;
@@ -577,15 +578,167 @@ text-transform: capitalize;
     background-size: 100% 100%;
     display: inline-block;
     opacity: 1;
+    border-radius: 50%;
   }
   .slider1 .slick-next::before {
-    background-image: url(../public/btn-next.png);
+    background-image: url(../public/btn-next1.png);
   }
   .slider1 .slick-prev::before {
-    background-image: url(../public/btn-prev.png);
+    background-image: url(../public/btn-prev1.png);
   }
   .slider1 .slick-next, .slider1 .slick-prev {
     width: 50px;
     height: 50px;
     z-index: 5;
   }
+  .slider1 .slick-dots li button::before{
+    content: none;
+  }
+  .slider1 .slick-dots li button {
+    width: 70px;
+    height: 3px;
+    padding: 0;
+    background: #fff;
+      background-color: rgb(255, 255, 255);
+  }
+  .slider1 .slick-dots li.slick-active button {
+    background-color: #1d1d1b;
+  }
+  .slider1 .slick-dots {
+    text-align: right;
+    bottom: -50px;
+  }
+  .slider1 .slick-dots li {
+    width: 80px;
+    height: 3px;
+  }
+  .Slider1Link{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: .4s;
+    border: 2px solid #fff;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #9F1917;
+    min-width: 195px;
+    font-weight: 400;
+    position: relative;
+    padding: 10px 35px 10px 15px;
+    margin-top: 20px;
+  }
+  .Slider1Link:hover{
+    background-color: #EA931A;
+    color: #fff;
+  }
+  .Slider1Link::after {
+    content: "";
+    height: 22px;
+    width: 22px;
+    background-size: 100% 100%;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background-image: url(../public/rightarrow.png);
+  }
+  .OfferImageBox{
+    position: relative;
+  }
+  .OfferBoxContent{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+ .OfferT1{
+  font-size: 35px;
+ }
+ .OfferT2{
+  font-size: 70px;
+  margin: 15px 0px;
+  font-weight: 600;
+ }
+ .OfferT3{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 2px;
+  transition: .4s;
+  border: 2px solid transparent;
+  display: inline-block;
+  border-radius: 25px;
+  background-color: #EA931A;
+  min-width: 195px;
+  font-weight: 400;
+  position: relative;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 20px;
+ }
+ .bg3{
+  background-image: url(../public/bg3.jpg);
+  background-size: 100% 100%;
+ }
+ .HmT1{
+  font-size: 45px;
+  color: #9F1917;
+  margin-bottom: 15px;
+ }
+ .HmT2{
+  margin-bottom: 30px;
+ }
+ .GelleryItem{
+  margin: 0 5px;
+  cursor: pointer;
+ }
+
+ .GallerySlider1 .slick-next::before, .GallerySlider1 .slick-prev::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-size: 100% 100%;
+  display: inline-block;
+  opacity: 1;
+  border-radius: 50%;
+}
+.GallerySlider1 .slick-next::before {
+  background-image: url(../public/btn-next1.png);
+}
+.GallerySlider1 .slick-prev::before {
+  background-image: url(../public/btn-prev1.png);
+}
+.GallerySlider1 .slick-next, .GallerySlider1 .slick-prev {
+  width: 50px;
+  height: 50px;
+  z-index: 5;
+}
+.GallerySlider1 .slick-dots li button::before{
+  content: none;
+}
+.GallerySlider1 .slick-dots li button {
+  width: 70px;
+  height: 3px;
+  padding: 0;
+  background: #9F1917;
+}
+.GallerySlider1 .slick-dots li.slick-active button {
+  background-color: #EA931A;
+}
+.GallerySlider1 .slick-dots {
+  text-align: center;
+  bottom: auto;
+  position: relative;
+  margin-top: 15px;
+}
+.GallerySlider1 .slick-dots li {
+  width: 80px;
+  height: 3px;
+}

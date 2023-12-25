@@ -2,6 +2,8 @@
 import HeroBanner from "@/components/common/HeroBanner";
 import PromotionalBlock from "@/components/home-components/Promotionalblock";
 import MenuList from "@/components/home-components/MenuList";
+import OfferBox from "@/components/home-components/OfferBox";
+import HomeGallery from "@/components/home-components/HomeGallery";
 export default function Home() {
   return (
     <>
@@ -10,6 +12,8 @@ export default function Home() {
         <HeroBanner/>
         <PromotionalBlock/>
         <MenuList/>
+        <OfferBox/>
+        <HomeGallery/>
         </div>
     </>
   );

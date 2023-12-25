@@ -47,7 +47,8 @@ export default function MenuList() {
             eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
             consectetur adipiscing elit, sed do{" "}
           </div>
-          <div className="slider1">
+          <div className="slider1" data-aos="flip-up"
+            data-aos-duration="800">
             <Slider {...settings}>
                 <div>
                     <ProductGrid imageSrc="/m1.jpg" menuTitle="Chicken Biriyani" menuPrice="150"/>
@@ -68,6 +69,9 @@ export default function MenuList() {
                     <ProductGrid imageSrc="/m2.jpg" menuTitle="Fried Rice" menuPrice="69"/>
                 </div>
             </Slider>
+          </div>
+          <div className="MobCenter">
+            <a href="javascript:void(0);" className="Slider1Link">Explore More</a>
           </div>
         </div>
       </section>

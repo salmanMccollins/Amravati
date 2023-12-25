@@ -14,6 +14,7 @@
     "react": "^18.2.0",
     "react-dom": "^18",
     "react-slick": "^0.29.0",
-    "slick": "^1.12.2"
+    "slick": "^1.12.2",
+    "yet-another-react-lightbox": "^3.15.6"
   }
 }
