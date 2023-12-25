@@ -742,3 +742,125 @@ text-transform: capitalize;
   width: 80px;
   height: 3px;
 }
+.bg4{
+  background-color: #589507;
+}
+.InstaGalleryHeader{
+  margin-bottom: 30px;
+}
+.InstraaLftBox {
+  display: flex;
+  align-items: center;
+}
+.InstraaLftBoxL {
+  flex: 0 0 45px;
+  max-width: 45px;
+}
+.InstaIcon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url(../public/insta.png);
+  background-size: 100% 100%;
+}
+.InstraaLftBoxR {
+  flex: auto;
+  font-weight: 400;
+  font-size: 35px;
+}
+.InstaGallery .GelleryItem{
+  position: relative;
+}
+.InstaGallery .GelleryItem::after{
+  content: "";
+  width: 95px;
+  height: 20px;
+  background-size: 100% 100%;
+  background-image: url(../public/inafter.png);
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.GallerySlider1.InstaGallery .slick-dots li button{
+  background-color: #fff;
+}
+.GallerySlider1.InstaGallery .slick-dots li.slick-active button{
+background-color: #9F1917;
+}
+
+.ReviewItemBoxItem {
+  padding: 13px;
+  background-color: #eae8e5;
+}
+.Rv1 {
+  font-weight: 500;
+  font-style: normal;
+  color: #589507;
+  font-size: 17px;
+  margin-bottom: 15px;
+  line-height: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.Rv2 {
+  font-size: 15px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 80px;
+}
+.ReviewAddress {
+  position: relative;
+}
+.RLocation, .Rname {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #589507;
+}
+.Rname {
+  color: #9F1917;
+  margin-bottom: 10px;
+}
+.ReviewAddress::after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-image: url(../public/googleIcon.png);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.TestimonialItem{
+  margin: 0 7px;
+}
+.TestimonialHeader{
+  margin-bottom: 30px;
+}
+.StarItems {
+  display: flex;
+}
+.StarItem {
+  width: 30px;
+  height: 26px;
+  display: inline-block;
+  background-image: url(../public/start.png);
+  background-size: 100% 100%;
+  margin-right: 10px;
+}
+.RT2{
+  color: #589507;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+.TestimonilSlider{
+
+}
+.TestimonilSlider .slick-next, .TestimonilSlider .slick-prev{
+display: none !important;
+}
