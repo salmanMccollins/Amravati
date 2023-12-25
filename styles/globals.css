@@ -864,3 +864,6 @@ background-color: #9F1917;
 .TestimonilSlider .slick-next, .TestimonilSlider .slick-prev{
 display: none !important;
 }
+.TestimonialBoxWrap{
+  border: 2px solid #e4e4e4;
+}
