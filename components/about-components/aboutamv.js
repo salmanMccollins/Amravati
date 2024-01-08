@@ -80,6 +80,8 @@ export default function AboutAMV() {
               </div>
               <div className="col-md-5">
                 <Image
+                data-aos="fade-up"
+                data-aos-duration="800"
                   src="/g1.jpg"
                   layout="responsive"
                   height={"401"}
@@ -94,6 +96,8 @@ export default function AboutAMV() {
             <div className="row">
             <div className="col-md-5">
                 <Image
+                data-aos="fade-up"
+                data-aos-duration="800"
                   src="/g2.jpg"
                   layout="responsive"
                   height={"401"}
@@ -187,6 +191,8 @@ export default function AboutAMV() {
               </div>
               <div className="col-md-5">
                 <Image
+                data-aos="fade-up"
+                data-aos-duration="800"
                   src="/g3.jpg"
                   layout="responsive"
                   height={"401"}
